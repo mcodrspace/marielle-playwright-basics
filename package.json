@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "example-test": "npx playwright test tests/example.spec.js",
+    "example-test-ui": "npx playwright test tests/example.spec.js --ui",
+    "registration-test": "npx playwright test tests/features/registration.spec.js",
+    "registration-test-ui": "npx playwright test tests/features/registration.spec.js --ui",
+    "login-test": "npx playwright test tests/features/login.spec.js --project chromium",
+    "login-test-trace": "npx playwright test tests/features/login.spec.js --project chromium --trace on",
+    "login-test-ui": "npx playwright test tests/features/login.spec.js --ui"
   },
   "repository": {
     "type": "git",
